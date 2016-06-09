@@ -1,0 +1,49 @@
+<% unless smart_listing.empty? %>
+  <%= smart_listing.pagination_per_page_links %>
+  <div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr class="active">
+        <th><%= smart_listing.sortable "Name",:Name %></th>
+        <th style="width:200px">Description</th>
+        <th style="width:200px"><%= smart_listing.sortable "Address",:Address %></th>
+        <th style="width:250px">Rate Restaurant</th>
+        <th style="width:150px;text-align:center"><%= smart_listing.sortable "Average Rate", "avg(Rate)"  %></th>
+        <th style="width:100px">Recommendation</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% smart_listing.collection.each do |restaurant| %>
+        <tr>
+          <td><%=link_to restaurant["Name"].to_s, restaurant %></td>
+          <td><%= restaurant.Description %></td>
+          <td><%= restaurant.Address %></td>
+           <td>         
+            <%= content_tag :div, id: "rate_#{restaurant.RestaurantID}" do -%>
+              <% if @already_rated[restaurant.RestaurantID]==0 %>
+                <div class="star">
+                 <% (1..10).each do |i| %>
+                  <%= link_to "★","#",id:restaurant.RestaurantID,value:i %>
+                <% end %>
+                </div>
+              <% else  %>
+                <%= "Rated for: #{@already_rated[restaurant.RestaurantID]}" %>
+              <% end %>
+            <% end -%>
+          </td>
+          <td style="text-align:center">
+            <%= content_tag :div, id: "avg_rate_#{restaurant.RestaurantID}" do -%>
+                 <%= @restaurants_avg_rates[restaurant.RestaurantID] %>
+            <% end -%>
+          </td>
+          <td>
+            <%= @recomendations[restaurant.RestaurantID][:sum].to_s+"%" %>
+          </td>
+        </tr>      
+      <% end %>
+    </tbody>
+  </table>
+</div>
+  <%= smart_listing.paginate %>
+<% end %>

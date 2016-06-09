@@ -1,0 +1,14 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://coffeescript.org/
+# 11 - bo w cssie jest odwrócona koplejność dla gwiazdek
+$(document).on 'click', '.star a', (event) ->
+	$.ajax
+      url: "/restaurants/add_rate"
+      type: "GET"
+      dataType: "script" 
+      contentType: 'json'   
+      data:
+      	rate_data: 11-$(this).attr('value')
+      	rest_id: $(this).attr('id')
+      ($("#rate_"+$(this).attr('id')).html("Rated for: "+(11-$(this).attr('value')))) if (11-$(this).attr('value')) > 0 and (11-$(this).attr('value')) < 11

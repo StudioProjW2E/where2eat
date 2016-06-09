@@ -1,0 +1,19 @@
+    
+    <% if current_user %>
+      <div id="main-container" class="container">
+        <div class = "row show-grid">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 text-center"> 
+            <span class = "login">Logged in as <strong><%= current_user.name %></strong></span>
+            <%= link_to "Log out", signout_path, id: "sign_out", class:'btn btn-default'%>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    <% else %>
+       <span class="title">where2eat</span><br/>
+      <%= link_to "Login with Facebook", "/auth/facebook", id: "sign_in", class:'btn btn-default' %>
+    <% end %>
+    <div class="content">
+      <%= yield %>
+    </div>

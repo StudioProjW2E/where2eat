@@ -1,0 +1,19 @@
+<h1>Where2Eat Krakow</h1>
+ <div id="restaurants">
+	 	<%= form_tag restaurants_path, :method => 'get', :id => "restaurants_search",remote: true do%>
+	 		Resturant Name:
+		    <%= text_field_tag :search, params[:search], class:"form-control" %>
+		    <div class="cat">
+				Categories:
+				<br> 
+				<% get_categories.each_with_index do |cat,i| %>
+					<%= check_box_tag "categories[]", cat %>
+					<%= cat %>
+					<%= content_tag(:br) if i%10==9 %>
+				<% end %>
+	  		</div>
+		    <%= submit_tag "Search", :name => nil, class:"btn btn-default",remote: true %>
+		    <%= link_to "Show All",restaurants_path, method: :get, class:"btn btn-default",remote: true %>  
+		<% end %>
+	<%= smart_listing_render(:restaurants) %>
+</div>

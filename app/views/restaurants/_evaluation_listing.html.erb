@@ -1,0 +1,58 @@
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr class="active">
+        <th><%= sortable "Name",:Name %></th>
+        <th style="width:250px"><%= sortable "Rate Restaurant", "already_rated" %></th>
+        <th><%= sortable "Average Rate", "average_rates" %></th>
+        <th><%= sortable "Popularity(#{@popularity_counter})", "popularity" %></th>
+        <th><%= sortable "Category(#{@category_counter})", "category" %></th>
+        <th><%= sortable "Rates(#{@average_rates_counter})", "average_rates_score" %></th>
+        <th><%= sortable "Recomendation", "recommendation_sum" %></th>
+        <th><%= sortable "Eval", "evaluation" %></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @restaurants.each do |restaurant| %>
+        <tr>
+          <td><%= restaurant["Name"] %></td>
+           <td>         
+            <%= content_tag :div, id: "rate_#{restaurant['RestaurantID']}" do -%>
+              <% if @already_rated[restaurant["RestaurantID"]] == 0 %>
+                <div class="star">
+                 <% (1..10).each do |i| %>
+                  <%= link_to "★","#",id:restaurant["RestaurantID"],value:i %>
+                <% end %>
+                </div>
+              <% else  %>
+                Rated for:
+                <%= @already_rated[restaurant["RestaurantID"]] %>
+              <% end %>
+            <% end -%>
+          </td>
+          <td>
+            <%= content_tag :div, id: "avg_rate_#{restaurant['RestaurantID']}" do -%>
+                 <%= restaurant["average_rates"] %>
+            <% end -%>
+          </td>
+          <td>
+            <%= restaurant["popularity"].to_s+"%"  %>
+          </td>
+          <td>
+            <%= restaurant["category"].to_s+"%" %>
+          </td>
+          <td>
+            <%= restaurant["average_rates_score"].to_s+"%"  %>
+          </td>
+          <td>
+            <%= restaurant["recommendation_sum"].to_s+"%"  %>
+          </td>
+          <td>
+            <%= restaurant["evaluation"].to_s+"%"  %>
+          </td>
+        </tr>      
+      <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,546 @@
+  [1m[36mActiveRecord::SchemaMigration Load (40.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (32.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (31.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (31.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (32.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (32.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 08:41:03', '2016-04-27 08:41:03', 980190962)
+  [1m[36mFixture Insert (36.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 08:41:03', '2016-04-27 08:41:03', 298486374)[0m
+  [1m[35mFixture Insert (34.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 08:41:03', '2016-04-27 08:41:03', 113629430)
+  [1m[36m (34.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (31.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (33.0ms)[0m  [1mBEGIN[0m
+------------------------
+UserTest: test_the_truth
+------------------------
+  [1m[35m (32.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (36.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (42.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (39.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (36.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (36.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (36.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 08:41:44', '2016-04-27 08:41:44', 980190962)
+  [1m[36mFixture Insert (44.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 08:41:44', '2016-04-27 08:41:44', 298486374)[0m
+  [1m[35mFixture Insert (36.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 08:41:44', '2016-04-27 08:41:44', 113629430)
+  [1m[36m (38.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (36.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (36.0ms)[0m  [1mBEGIN[0m
+------------------------
+UserTest: test_the_truth
+------------------------
+  [1m[35m (36.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (32.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (32.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (32.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (35.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (34.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (33.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 08:42:49', '2016-04-27 08:42:49', 980190962)
+  [1m[36mFixture Insert (33.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 08:42:49', '2016-04-27 08:42:49', 298486374)[0m
+  [1m[35mFixture Insert (33.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 08:42:49', '2016-04-27 08:42:49', 113629430)
+  [1m[36m (35.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (34.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (37.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+UserTest: test_should_not_save_user_without_uid
+-----------------------------------------------
+  [1m[35m (33.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (32.0ms)[0m  [1mINSERT INTO `users` (`created_at`, `updated_at`) VALUES ('2016-04-27 08:42:49', '2016-04-27 08:42:49')[0m
+  [1m[35m (32.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (34.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (31.0ms)[0m  BEGIN
+------------------------
+UserTest: test_the_truth
+------------------------
+  [1m[36m (32.0ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (36.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (43.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (37.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (35.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (40.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (42.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 08:47:11', '2016-04-27 08:47:11', 980190962)
+  [1m[36mFixture Insert (44.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 08:47:11', '2016-04-27 08:47:11', 298486374)[0m
+  [1m[35mFixture Insert (38.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 08:47:11', '2016-04-27 08:47:11', 113629430)
+  [1m[36m (44.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (47.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (41.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+UserTest: test_should_not_save_user_without_uid
+-----------------------------------------------
+  [1m[35m (39.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (36.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (36.0ms)[0m  ROLLBACK
+  [1m[36m (39.0ms)[0m  [1mBEGIN[0m
+------------------------
+UserTest: test_the_truth
+------------------------
+  [1m[35m (39.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (42.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (40.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (40.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (40.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (41.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (40.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 08:48:03', '2016-04-27 08:48:03', 980190962)
+  [1m[36mFixture Insert (47.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 08:48:03', '2016-04-27 08:48:03', 298486374)[0m
+  [1m[35mFixture Insert (44.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 08:48:03', '2016-04-27 08:48:03', 113629430)
+  [1m[36m (48.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (40.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (40.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+UserTest: test_should_not_save_user_without_uid
+-----------------------------------------------
+  [1m[35m (39.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (39.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (45.0ms)[0m  ROLLBACK
+  [1m[36m (39.0ms)[0m  [1mBEGIN[0m
+------------------------
+UserTest: test_the_truth
+------------------------
+  [1m[35m (40.0ms)[0m  ROLLBACK
+  [1m[36m (39.0ms)[0m  [1mBEGIN[0m
+----------------------------------
+UserTest: test_should_report_error
+----------------------------------
+  [1m[35m (41.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (39.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (39.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (36.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (37.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (37.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (37.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (37.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (40.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 08:49:01', '2016-04-27 08:49:01', 980190962)
+  [1m[36mFixture Insert (38.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 08:49:01', '2016-04-27 08:49:01', 298486374)[0m
+  [1m[35mFixture Insert (36.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 08:49:01', '2016-04-27 08:49:01', 113629430)
+  [1m[36m (38.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (35.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (40.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+UserTest: test_should_not_save_user_without_uid
+-----------------------------------------------
+  [1m[35m (37.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (37.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (37.0ms)[0m  ROLLBACK
+  [1m[36m (35.0ms)[0m  [1mBEGIN[0m
+----------------------------------
+UserTest: test_should_report_error
+----------------------------------
+  [1m[35m (36.0ms)[0m  ROLLBACK
+  [1m[36m (36.0ms)[0m  [1mBEGIN[0m
+------------------------
+UserTest: test_the_truth
+------------------------
+  [1m[35m (39.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (36.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (41.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (40.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (42.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (40.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (40.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (40.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:37:40', '2016-04-27 09:37:40', 980190962)
+  [1m[36mFixture Insert (41.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:37:40', '2016-04-27 09:37:40', 298486374)[0m
+  [1m[35mFixture Insert (41.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 09:37:40', '2016-04-27 09:37:40', 113629430)
+  [1m[36m (41.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (40.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (45.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RestaurantsControllerTest: test_sould_get_index
+-----------------------------------------------
+Processing by RestaurantsController#add_rate as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (39.0ms)[0m  ROLLBACK
+  [1m[36m (41.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RestaurantsControllerTest: test_should_get_show
+-----------------------------------------------
+Processing by RestaurantsController#show as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (39.0ms)[0m  ROLLBACK
+  [1m[36m (40.0ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RestaurantsControllerTest: test_should_get_index
+------------------------------------------------
+Processing by RestaurantsController#index as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (42.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (33.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (33.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (31.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (31.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (31.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (32.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (33.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:40:26', '2016-04-27 09:40:26', 980190962)
+  [1m[36mFixture Insert (31.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:40:26', '2016-04-27 09:40:26', 298486374)[0m
+  [1m[35mFixture Insert (31.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 09:40:26', '2016-04-27 09:40:26', 113629430)
+  [1m[36m (34.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (33.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (31.0ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RestaurantsControllerTest: test_should_get_index
+------------------------------------------------
+Processing by RestaurantsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (32.0ms)[0m  ROLLBACK
+  [1m[36m (32.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RestaurantsControllerTest: test_sould_get_index
+-----------------------------------------------
+Processing by RestaurantsController#add_rate as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (31.0ms)[0m  ROLLBACK
+  [1m[36m (32.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RestaurantsControllerTest: test_should_get_show
+-----------------------------------------------
+Processing by RestaurantsController#show as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (34.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (34.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (37.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (32.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (32.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (37.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (35.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:41:15', '2016-04-27 09:41:15', 980190962)
+  [1m[36mFixture Insert (33.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:41:15', '2016-04-27 09:41:15', 298486374)[0m
+  [1m[35mFixture Insert (32.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 09:41:15', '2016-04-27 09:41:15', 113629430)
+  [1m[36m (45.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (32.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (32.0ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RestaurantsControllerTest: test_should_get_index
+------------------------------------------------
+Processing by RestaurantsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (35.0ms)[0m  ROLLBACK
+  [1m[36m (31.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RestaurantsControllerTest: test_should_get_show
+-----------------------------------------------
+Processing by RestaurantsController#show as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (34.0ms)[0m  ROLLBACK
+  [1m[36m (31.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RestaurantsControllerTest: test_sould_get_index
+-----------------------------------------------
+Processing by RestaurantsController#add_rate as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (34.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (36.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (36.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (283.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (40.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (36.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (36.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:43:17', '2016-04-27 09:43:17', 980190962)
+  [1m[36mFixture Insert (36.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:43:17', '2016-04-27 09:43:17', 298486374)[0m
+  [1m[35mFixture Insert (39.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 09:43:17', '2016-04-27 09:43:17', 113629430)
+  [1m[36m (43.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (36.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (40.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RestaurantsControllerTest: test_should_get_show
+-----------------------------------------------
+Processing by RestaurantsController#show as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (36.0ms)[0m  ROLLBACK
+  [1m[36m (35.0ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RestaurantsControllerTest: test_should_get_index
+------------------------------------------------
+Processing by RestaurantsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (36.0ms)[0m  ROLLBACK
+  [1m[36m (36.0ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+RestaurantsControllerTest: test_sould_get_add_rate
+--------------------------------------------------
+Processing by RestaurantsController#add_rate as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (44.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (36.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (48.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (35.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (35.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (37.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (39.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:46:41', '2016-04-27 09:46:41', 980190962)
+  [1m[36mFixture Insert (35.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:46:41', '2016-04-27 09:46:41', 298486374)[0m
+  [1m[35mFixture Insert (37.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 09:46:41', '2016-04-27 09:46:41', 113629430)
+  [1m[36m (37.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (36.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (36.0ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+RestaurantsControllerTest: test_should_get_index
+------------------------------------------------
+Processing by RestaurantsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (35.0ms)[0m  ROLLBACK
+  [1m[36m (35.0ms)[0m  [1mBEGIN[0m
+--------------------------------------------------
+RestaurantsControllerTest: test_sould_get_add_rate
+--------------------------------------------------
+Processing by RestaurantsController#add_rate as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (35.0ms)[0m  ROLLBACK
+  [1m[36m (36.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+RestaurantsControllerTest: test_should_get_show
+-----------------------------------------------
+Processing by RestaurantsController#show as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (37.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (39.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (42.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (39.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (40.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (41.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (40.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:47:06', '2016-04-27 09:47:06', 980190962)
+  [1m[36mFixture Insert (39.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:47:06', '2016-04-27 09:47:06', 298486374)[0m
+  [1m[35mFixture Insert (42.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 09:47:06', '2016-04-27 09:47:06', 113629430)
+  [1m[36m (41.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (39.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (39.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+SessionsControllerTest: test_should_create_user
+-----------------------------------------------
+  [1m[35m (39.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (40.0ms)[0m  [1mINSERT INTO `users` (`id`, `uid`, `created_at`, `updated_at`) VALUES (1, '1', '2016-04-27 09:47:06', '2016-04-27 09:47:06')[0m
+  [1m[35m (41.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (40.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (39.0ms)[0m  BEGIN
+----------------------------------------------
+SessionsControllerTest: test_should_get_create
+----------------------------------------------
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (39.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (39.0ms)[0m  BEGIN
+-----------------------------------------------
+SessionsControllerTest: test_should_get_destroy
+-----------------------------------------------
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (42.0ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (36.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (40.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (40.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (41.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (36.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (41.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:48:52', '2016-04-27 09:48:52', 980190962)
+  [1m[36mFixture Insert (40.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:48:52', '2016-04-27 09:48:52', 298486374)[0m
+  [1m[35mFixture Insert (36.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 09:48:52', '2016-04-27 09:48:52', 113629430)
+  [1m[36m (47.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (37.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (35.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+SessionsControllerTest: test_should_get_destroy
+-----------------------------------------------
+  [1m[35m (36.0ms)[0m  ROLLBACK
+  [1m[36m (38.0ms)[0m  [1mBEGIN[0m
+----------------------------------------------
+SessionsControllerTest: test_should_get_create
+----------------------------------------------
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (38.0ms)[0m  ROLLBACK
+  [1m[36m (38.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+SessionsControllerTest: test_should_create_user
+-----------------------------------------------
+  [1m[35m (49.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (37.0ms)[0m  [1mINSERT INTO `users` (`id`, `uid`, `provider`, `created_at`, `updated_at`) VALUES (1, '1', 'facebook', '2016-04-27 09:48:53', '2016-04-27 09:48:53')[0m
+  [1m[35m (36.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (37.0ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (32.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (34.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (32.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (32.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (32.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (32.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:49:51', '2016-04-27 09:49:51', 980190962)
+  [1m[36mFixture Insert (35.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:49:51', '2016-04-27 09:49:51', 298486374)[0m
+  [1m[35mFixture Insert (32.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 09:49:51', '2016-04-27 09:49:51', 113629430)
+  [1m[36m (34.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (34.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (31.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+SessionsControllerTest: test_should_create_user
+-----------------------------------------------
+  [1m[35m (32.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (32.0ms)[0m  [1mINSERT INTO `users` (`id`, `uid`, `provider`, `created_at`, `updated_at`) VALUES (1, '1', 'facebook', '2016-04-27 09:49:51', '2016-04-27 09:49:51')[0m
+  [1m[35m (32.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (35.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (31.0ms)[0m  BEGIN
+----------------------------------------------
+SessionsControllerTest: test_should_get_create
+----------------------------------------------
+  [1m[36m (34.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (31.0ms)[0m  INSERT INTO `users` (`id`, `uid`, `provider`, `created_at`, `updated_at`) VALUES (1, '1', 'facebook', '2016-04-27 09:49:51', '2016-04-27 09:49:51')
+  [1m[36m (31.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (32.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (32.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (34.0ms)[0m  ROLLBACK
+  [1m[36m (32.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+SessionsControllerTest: test_should_get_destroy
+-----------------------------------------------
+  [1m[35m (32.0ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (31.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (32.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (33.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (32.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (35.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (36.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:51:48', '2016-04-27 09:51:48', 980190962)
+  [1m[36mFixture Insert (32.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 09:51:48', '2016-04-27 09:51:48', 298486374)[0m
+  [1m[35mFixture Insert (35.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 09:51:48', '2016-04-27 09:51:48', 113629430)
+  [1m[36m (39.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (33.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (33.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+SessionsControllerTest: test_should_create_user
+-----------------------------------------------
+  [1m[35m (31.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (32.0ms)[0m  [1mINSERT INTO `users` (`id`, `uid`, `provider`, `created_at`, `updated_at`) VALUES (1, '1', 'facebook', '2016-04-27 09:51:48', '2016-04-27 09:51:48')[0m
+  [1m[35m (35.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (34.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (33.0ms)[0m  BEGIN
+----------------------------------------------
+SessionsControllerTest: test_should_get_create
+----------------------------------------------
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (33.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (32.0ms)[0m  BEGIN
+-----------------------------------------------
+SessionsControllerTest: test_should_get_destroy
+-----------------------------------------------
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (32.0ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (30.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (30.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (40.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (30.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (40.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (30.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 10:00:14', '2016-04-27 10:00:14', 980190962)
+  [1m[36mFixture Insert (40.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 10:00:14', '2016-04-27 10:00:14', 298486374)[0m
+  [1m[35mFixture Insert (40.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 10:00:14', '2016-04-27 10:00:14', 113629430)
+  [1m[36m (40.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (40.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (40.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+SessionsControllerTest: test_should_create_user
+-----------------------------------------------
+  [1m[35m (38.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (36.0ms)[0m  [1mINSERT INTO `users` (`id`, `uid`, `provider`, `created_at`, `updated_at`) VALUES (1, '1', 'facebook', '2016-04-27 10:00:15', '2016-04-27 10:00:15')[0m
+  [1m[35m (30.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (102.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (40.0ms)[0m  BEGIN
+----------------------------------------------
+SessionsControllerTest: test_should_get_create
+----------------------------------------------
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (50.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (40.0ms)[0m  BEGIN
+-----------------------------------------------
+SessionsControllerTest: test_should_get_destroy
+-----------------------------------------------
+  [1m[36m (50.0ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (41.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (47.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (43.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (44.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (41.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (41.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 10:01:10', '2016-04-27 10:01:10', 980190962)
+  [1m[36mFixture Insert (41.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 10:01:10', '2016-04-27 10:01:10', 298486374)[0m
+  [1m[35mFixture Insert (41.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 10:01:10', '2016-04-27 10:01:10', 113629430)
+  [1m[36m (43.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (40.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (42.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+SessionsControllerTest: test_should_create_user
+-----------------------------------------------
+  [1m[35m (40.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (40.0ms)[0m  [1mINSERT INTO `users` (`id`, `uid`, `provider`, `created_at`, `updated_at`) VALUES (1, '1', 'facebook', '2016-04-27 10:01:10', '2016-04-27 10:01:10')[0m
+  [1m[35m (40.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (42.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (40.0ms)[0m  BEGIN
+----------------------------------------------
+SessionsControllerTest: test_should_get_create
+----------------------------------------------
+Processing by SessionsController#create as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (40.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (43.0ms)[0m  BEGIN
+-----------------------------------------------
+SessionsControllerTest: test_should_get_destroy
+-----------------------------------------------
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/home/show
+Filter chain halted as :ensure_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (39.0ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (35.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (37.0ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (37.0ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (36.0ms)[0m  BEGIN
+  [1m[36mFixture Delete (41.0ms)[0m  [1mDELETE FROM `users`[0m
+  [1m[35mFixture Insert (35.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 10:03:29', '2016-04-27 10:03:29', 980190962)
+  [1m[36mFixture Insert (37.0ms)[0m  [1mINSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2016-04-06 10:08:01', '2016-04-27 10:03:29', '2016-04-27 10:03:29', 298486374)[0m
+  [1m[35mFixture Insert (36.0ms)[0m  INSERT INTO `users` (`provider`, `uid`, `name`, `oauth_token`, `oauth_expires_at`, `created_at`, `updated_at`, `id`) VALUES ('facebook', '23423423fsf4fsf4', 'Jan Kowalski', 'gg4g54fg54g654g65v54654gvb654654c54', '2016-04-06 10:08:01', '2016-04-27 10:03:29', '2016-04-27 10:03:29', 113629430)
+  [1m[36m (39.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (38.0ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (36.0ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+UserTest: test_should_not_save_user_without_uid
+-----------------------------------------------
+  [1m[35m (35.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (37.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (36.0ms)[0m  ROLLBACK
+  [1m[36m (39.0ms)[0m  [1mBEGIN[0m
+----------------------------------
+UserTest: test_should_report_error
+----------------------------------
+  [1m[35m (38.0ms)[0m  ROLLBACK
+  [1m[36m (36.0ms)[0m  [1mBEGIN[0m
+------------------------
+UserTest: test_the_truth
+------------------------
+  [1m[35m (37.0ms)[0m  ROLLBACK

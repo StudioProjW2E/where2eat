@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  provider: MyString
+  uid: MyString
+  name: MyString
+  oauth_token: MyString
+  oauth_expires_at: 2016-04-06 10:08:01
+
+two:
+  provider: MyString
+  uid: MyString
+  name: MyString
+  oauth_token: MyString
+  oauth_expires_at: 2016-04-06 10:08:01
+
+three:
+  provider: facebook
+  uid: 23423423fsf4fsf4
+  name: Jan Kowalski
+  oauth_token: gg4g54fg54g654g65v54654gvb654654c54
+  oauth_expires_at: 2016-04-06 10:08:01

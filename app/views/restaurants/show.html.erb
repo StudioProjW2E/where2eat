@@ -1,0 +1,79 @@
+<script>
+  $(document).ready(function(){
+    marker_data = <%= raw @hash_restaurant_data.to_json %>
+    if (marker_data!=null){
+       gmap_form(marker_data);
+    }
+  });
+
+  function gmap_form(marker_data) {
+    handler = Gmaps.build('Google');    // map init
+    handler.buildMap({ provider: {}, internal: {id: 'google_map'}}, function(){
+    //statement check - new or edit view
+      markers = handler.addMarkers(marker_data);
+      handler.bounds.extendWith(markers);
+      handler.fitMapToBounds();
+      handler.getMap().setZoom(16);
+    });
+  };
+</script>
+
+<h1> 
+	<%= @restaurant.Name %>
+</h1>
+<table class="table table-hover table-striped">
+  <thead>
+    <tr class="active">
+      <th>Name</th>
+      <th>Description</th>
+      <th>Address</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th style="width:250px">Rate Restaurant</th>
+      <th>Average Rate</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+
+  <tbody>   
+      <tr>
+        <td>
+            <% unless @restaurant.Link=="" %>
+              <%= link_to @restaurant.Name.to_s, url_with_protocol(@restaurant.Link) %>
+            <% else %>
+              <%= @restaurant.Name.to_s %>
+            <% end %>
+        </td>
+        <td><%= @restaurant.Description %></td>
+        <td><%= @restaurant.Address %></td>
+        <td><%= @restaurant.Latitude %></td>
+        <td><%= @restaurant.Longitude %></td>
+        <td>
+          <%= content_tag :div, id: "rate_#{@restaurant.RestaurantID}" do -%>
+              <% if @already_rated[@restaurant.RestaurantID]==0 %>
+                <div class="star">
+                 <% (1..10).each do |i| %>
+                  <%= link_to "★","#",id:@restaurant.RestaurantID,value:i %>
+                <% end %>
+                </div>
+              <% else  %>
+                <%= "Rated for: #{@already_rated[@restaurant.RestaurantID]}" %>
+              <% end %>
+            <% end -%>
+          </td>
+          <td>
+            <%= content_tag :div, id: "avg_rate_#{@restaurant.RestaurantID}" do -%>
+              <%= @restaurant.avg_rate %>
+            <% end -%>
+          </td>
+          <!--było @restaurants_index_path -->
+          <td><%= link_to "BACK",restaurants_path %></td> 
+      </tr>
+    <tr>
+      <td colspan="8" align="center">
+        <div id="google_map" style='width: 800px; height: 400px;'></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+

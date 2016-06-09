@@ -1,0 +1,119 @@
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body{
+	background-image: url("krk.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-bottom:10px;
+	background-color: #aaa;
+	background-attachment: fixed
+}
+.content{
+
+	background-color:rgba(255,255,255,255.85);
+	border-radius: 18px;
+	color: black;
+}
+
+.table{
+	text-align:left;
+}
+
+#tabela th:nth-child(3){
+	width: 200px;
+}
+
+.container{
+	min-width:1200px; /* suppose you want minimun width of 1000px */
+    width: auto !important;  /* Firefox will set width as auto */
+    width:1200px;
+	position: relative;;
+	width: auto;
+	height: auto;
+	color:#fff;
+	z-index: 15;
+	top: 15%;
+}
+.col-md-offset-3 {
+    margin-left: 5%;
+}
+.col-md-6 {
+    width: 90%;
+}
+h1{
+	font-size: 35px;
+	margin-left: 36%;
+	font-family: 'Exo', sans-serif;
+	padding-top: 1%;
+}
+
+.frm{
+	position: absolute;
+	right: 130px;
+	top:90px;
+	vertical-align: top;
+}
+
+td{
+	padding: 3px;
+}
+.title {
+	position:relative;
+	float: left;
+	left: 30%;
+	top: 310px;
+	height:54px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 52px;
+	font-weight: 200;
+	font-weight: bold;
+}
+
+.login{
+	position:relative;
+	float: left;
+	left: 42%;
+	margin-top:35px;
+	font-family: 'Exo', sans-serif;
+}
+
+.form-control{
+	width:200px;
+}
+
+#sign_in{
+	float:left;
+	position: relative;
+	left: 33%;
+	top: 310px;
+	vertical-align: middle;
+	width: auto;
+	height: auto;
+	font-size: 16px;
+	color: white;
+	background: #2e4a88;
+}
+
+#sign_out{
+	float:left;
+	position: relative;
+	left: 43%;
+	margin-top: 25px;
+	vertical-align: middle;
+	width: auto;
+	height: auto;
+	font-size: 16px;
+	color: white;
+	background: #2e4a88;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}

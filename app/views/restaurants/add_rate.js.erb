@@ -1,0 +1,1 @@
+$("#avg_rate_<%= @restaurant_id %>").html("<%= escape_javascript(render :partial => 'avg_rate', :locals =>{:rest_id => @restaurant_id} )%>")

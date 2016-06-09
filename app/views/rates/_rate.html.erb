@@ -1,0 +1,5 @@
+<div class="rate">
+	<%= content_tag :span, "#{rate.Rate} #{rate.Comment}", class="rate" %>
+	<%= link_to "Score it",[@restaurant, rate],method: :create %>
+	<div><%= simple_format rate.rate %></div>
+</div>

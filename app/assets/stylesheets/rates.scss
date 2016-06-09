@@ -1,0 +1,22 @@
+// Place all the styles related to the rates controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.star {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.star > a {
+  color: grey;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.star > a:hover:before,
+.star > a:hover ~ a:before {
+	color: #f2b01e;
+	content: '\2605';
+	position:absolute;
+}
